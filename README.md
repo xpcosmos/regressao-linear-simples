@@ -181,6 +181,10 @@ O objetivo desse projeto é demonstrar entendimento de técnicas de regressão l
   </tbody>
 </table>
 
+### Distribuição de preços:
+
+![fig_1](https://github.com/xpcosmos/regressao-linear-simples/blob/main/assets/fig_1.png)
+
 ### Tabela de correlação de dados:
 
 <table border="0" class="dataframe">
@@ -269,6 +273,214 @@ O objetivo desse projeto é demonstrar entendimento de técnicas de regressão l
     </tr>
   </tbody>
 </table>
+
+### Gráfico de regressão:
+
+![fig_2](https://github.com/xpcosmos/regressao-linear-simples/blob/main/assets/fig_2.png)
+
+Verificamos uma alta correlação entre a acabamento em mármore e andares em relação ao preço dos imóveis. Vamos verificar como essas características variam em relação ao preço:
+<br><br>
+<a><img src="https://github.com/xpcosmos/regressao-linear-simples/blob/main/assets/fig_6.png" alt="fig_6" width="450"></a>
+<a><img src="https://github.com/xpcosmos/regressao-linear-simples/blob/main/assets/fig_7.png" alt="fig_7" width="450"></a><br>
+
+### Relação Entre área e preço:
+
+![fig_8](https://github.com/xpcosmos/regressao-linear-simples/blob/main/assets/fig_8.png)
+
+Temos uma regressão positiva.
+
+### Categorizando preço de imóveis:
+
+#### Tebela de distribuição:
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right">
+      <th></th>
+      <th>Frequência (qnt)</th>
+      <th>Frequência (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>35159.091 -  40661.364</th>
+      <td>166</td>
+      <td>16.6</td>
+    </tr>
+    <tr>
+      <th>46163.636 - 51665.909</th>
+      <td>151</td>
+      <td>15.1</td>
+    </tr>
+    <tr>
+      <th>40661.364 - 46163.636</th>
+      <td>141</td>
+      <td>14.1</td>
+    </tr>
+    <tr>
+      <th>29656.818 - 35159.091</th>
+      <td>134</td>
+      <td>13.4</td>
+    </tr>
+    <tr>
+      <th>51665.909 - 57168.182</th>
+      <td>131</td>
+      <td>13.1</td>
+    </tr>
+    <tr>
+      <th>24154.545 - 29656.818</th>
+      <td>100</td>
+      <td>10.0</td>
+    </tr>
+    <tr>
+      <th>57168.182 - 62670.455</th>
+      <td>57</td>
+      <td>5.7</td>
+    </tr>
+    <tr>
+      <th>18652.273 - 24154.545</th>
+      <td>49</td>
+      <td>4.9</td>
+    </tr>
+    <tr>
+      <th>62670.455 - 68172.727</th>
+      <td>38</td>
+      <td>3.8</td>
+    </tr>
+    <tr>
+      <th>13089.474 - 18652.273</th>
+      <td>23</td>
+      <td>2.3</td>
+    </tr>
+    <tr>
+      <th>68172.727 - 73675.0</th>
+      <td>10</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
+</table>
+
+
+#### Visualização gráfica:
+
+![fig_11](https://github.com/xpcosmos/regressao-linear-simples/blob/main/assets/fig_11.png)
+
+#### Guia de categoria:
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right">
+      <th></th>
+      <th>Categoria</th>
+    </tr>
+    <tr>
+      <th>Correspondente</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>35159.091 -  40661.364</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>46163.636 - 51665.909</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>40661.364 - 46163.636</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>29656.818 - 35159.091</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>51665.909 - 57168.182</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>24154.545 - 29656.818</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>57168.182 - 62670.455</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>18652.273 - 24154.545</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>62670.455 - 68172.727</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>13089.474 - 18652.273</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>68172.727 - 73675.0</td>
+    </tr>
+  </tbody>
+</table>
+
+## Modelo de regressão:
+
+### Coeficiente de estimação:
+R² = 0.64
+
+### Exemplos de dados estimados:
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right">
+      <th></th>
+      <th>Real</th>
+      <th>Previsto</th>
+      <th>Diferença</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>53375</td>
+      <td>50619.33</td>
+      <td>-2755.67</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>40975</td>
+      <td>44605.39</td>
+      <td>3630.39</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>26350</td>
+      <td>32787.95</td>
+      <td>6437.95</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>27950</td>
+      <td>31133.66</td>
+      <td>3183.66</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>31650</td>
+      <td>29823.02</td>
+      <td>-1826.98</td>
+    </tr>
+  </tbody>
+</table>
+
+## Considerações finais:
+
+Fizemos um modelo de regressão com um coeficiente de regressão relativamente alta e predições consideravalmente precisas.<br>
+Para aumentar o coeficiente precisaríamos de mais dados e mais detalhes dos imóveis.
+
 
 # Tecnologias utilizadas
 
